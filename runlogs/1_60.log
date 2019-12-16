@@ -1,0 +1,358 @@
+FLAG ARGUMENTS
+dm_plex_box_faces = 60,60
+ts_exact_final_time = matchstep
+stab = none
+CtauS = .3
+ts_adapt_dt_max = .01
+snes_type = ksponly
+problem = advection2d
+ts_max_time = 1
+petscspace_degree = 1
+ts_type = rosw
+ceed = /cpu/self/ref/serial
+ksp_atol = 1e-5
+-dm_plex_box_faces 60,60 -ts_exact_final_time matchstep -stab none -CtauS .3 -ts_adapt_dt_max .01 -snes_type ksponly -problem advection2d -ts_max_time 1 -petscspace_degree 1 -ts_type rosw -ceed /cpu/self/ref/serial -ksp_atol 1e-5 -naturalz -ts_monitor -dm_view -implicit -snes_mf -ts_view
+DM Object: 1 MPI processes
+  type: plex
+DM_0x84000000_0 in 2 dimensions:
+  0-cells: 3721
+  1-cells: 7320
+  2-cells: 3600
+Labels:
+  depth: 3 strata with value/size (0 (3721), 1 (7320), 2 (3600))
+  Face Sets: 4 strata with value/size (4 (60), 2 (60), 1 (60), 3 (60))
+  marker: 1 strata with value/size (1 (480))
+Global FEM nodes: 3600 on 1 ranks
+Local FEM nodes: 3721 (3600 owned)
+0 TS dt 0.0001 time 0.
+1 TS dt 0.001 time 0.0001
+2 TS dt 0.01 time 0.0011
+3 TS dt 0.01 time 0.0111
+4 TS dt 0.01 time 0.0211
+5 TS dt 0.01 time 0.0311
+6 TS dt 0.01 time 0.0411
+7 TS dt 0.01 time 0.0511
+8 TS dt 0.01 time 0.0611
+9 TS dt 0.01 time 0.0711
+10 TS dt 0.01 time 0.0811
+11 TS dt 0.01 time 0.0911
+12 TS dt 0.01 time 0.1011
+13 TS dt 0.01 time 0.1111
+14 TS dt 0.01 time 0.1211
+15 TS dt 0.01 time 0.1311
+16 TS dt 0.01 time 0.1411
+17 TS dt 0.01 time 0.1511
+18 TS dt 0.01 time 0.1611
+19 TS dt 0.01 time 0.1711
+20 TS dt 0.01 time 0.1811
+21 TS dt 0.01 time 0.1911
+22 TS dt 0.01 time 0.2011
+23 TS dt 0.01 time 0.2111
+24 TS dt 0.01 time 0.2211
+25 TS dt 0.01 time 0.2311
+26 TS dt 0.01 time 0.2411
+27 TS dt 0.01 time 0.2511
+28 TS dt 0.01 time 0.2611
+29 TS dt 0.01 time 0.2711
+30 TS dt 0.01 time 0.2811
+31 TS dt 0.01 time 0.2911
+32 TS dt 0.01 time 0.3011
+33 TS dt 0.01 time 0.3111
+34 TS dt 0.01 time 0.3211
+35 TS dt 0.01 time 0.3311
+36 TS dt 0.01 time 0.3411
+37 TS dt 0.01 time 0.3511
+38 TS dt 0.01 time 0.3611
+39 TS dt 0.01 time 0.3711
+40 TS dt 0.01 time 0.3811
+41 TS dt 0.01 time 0.3911
+42 TS dt 0.01 time 0.4011
+43 TS dt 0.01 time 0.4111
+44 TS dt 0.01 time 0.4211
+45 TS dt 0.01 time 0.4311
+46 TS dt 0.01 time 0.4411
+47 TS dt 0.01 time 0.4511
+48 TS dt 0.01 time 0.4611
+49 TS dt 0.01 time 0.4711
+50 TS dt 0.01 time 0.4811
+51 TS dt 0.01 time 0.4911
+52 TS dt 0.01 time 0.5011
+53 TS dt 0.01 time 0.5111
+54 TS dt 0.01 time 0.5211
+55 TS dt 0.01 time 0.5311
+56 TS dt 0.01 time 0.5411
+57 TS dt 0.01 time 0.5511
+58 TS dt 0.01 time 0.5611
+59 TS dt 0.01 time 0.5711
+60 TS dt 0.01 time 0.5811
+61 TS dt 0.01 time 0.5911
+62 TS dt 0.01 time 0.6011
+63 TS dt 0.01 time 0.6111
+64 TS dt 0.01 time 0.6211
+65 TS dt 0.01 time 0.6311
+66 TS dt 0.01 time 0.6411
+67 TS dt 0.01 time 0.6511
+68 TS dt 0.01 time 0.6611
+69 TS dt 0.01 time 0.6711
+70 TS dt 0.01 time 0.6811
+71 TS dt 0.01 time 0.6911
+72 TS dt 0.01 time 0.7011
+73 TS dt 0.01 time 0.7111
+74 TS dt 0.01 time 0.7211
+75 TS dt 0.01 time 0.7311
+76 TS dt 0.01 time 0.7411
+77 TS dt 0.01 time 0.7511
+78 TS dt 0.01 time 0.7611
+79 TS dt 0.01 time 0.7711
+80 TS dt 0.01 time 0.7811
+81 TS dt 0.01 time 0.7911
+82 TS dt 0.01 time 0.8011
+83 TS dt 0.01 time 0.8111
+84 TS dt 0.01 time 0.8211
+85 TS dt 0.01 time 0.8311
+86 TS dt 0.01 time 0.8411
+87 TS dt 0.01 time 0.8511
+88 TS dt 0.01 time 0.8611
+89 TS dt 0.01 time 0.8711
+90 TS dt 0.01 time 0.8811
+91 TS dt 0.01 time 0.8911
+92 TS dt 0.01 time 0.9011
+93 TS dt 0.01 time 0.9111
+94 TS dt 0.01 time 0.9211
+95 TS dt 0.01 time 0.9311
+96 TS dt 0.01 time 0.9411
+97 TS dt 0.01 time 0.9511
+98 TS dt 0.01 time 0.9611
+99 TS dt 0.01 time 0.9711
+100 TS dt 0.00945 time 0.9811
+101 TS dt 0.00945 time 0.99055
+102 TS dt 0.01 time 1.
+TS Object: 1 MPI processes
+  type: rosw
+    Rosenbrock-W ra34pw2
+    Abscissa of A       =  0.000000  0.871733  0.731580  1.000000 
+    Abscissa of A+Gamma =  0.435867  0.871733  0.731580  1.000000 
+  maximum time=1.
+  total number of nonlinear solver iterations=408
+  total number of linear solver iterations=4504
+  total number of linear solve failures=0
+  total number of rejected steps=0
+  using relative error tolerance of 0.0001,   using absolute error tolerance of 0.0001
+  TSAdapt Object: 1 MPI processes
+    type: basic
+    safety factor 0.9
+    extra safety factor after step rejection 0.5
+    clip fastest increase 10.
+    clip fastest decrease 0.1
+    maximum allowed timestep 0.01
+    minimum allowed timestep 1e-14
+    maximum solution absolute value to be ignored -1.
+  SNES Object: 1 MPI processes
+    type: ksponly
+    maximum iterations=50, maximum function evaluations=10000
+    tolerances: relative=1e-08, absolute=1e-50, solution=1e-08
+    total number of linear solver iterations=15
+    total number of function evaluations=16
+    norm schedule ALWAYS
+    Jacobian is never rebuilt
+    Jacobian is applied matrix-free with differencing, no explict Jacobian
+    KSP Object: 1 MPI processes
+      type: gmres
+        restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+        happy breakdown tolerance 1e-30
+      maximum iterations=10000, initial guess is zero
+      tolerances:  relative=1e-05, absolute=1e-05, divergence=10000.
+      left preconditioning
+      using PRECONDITIONED norm type for convergence test
+    PC Object: 1 MPI processes
+      type: none
+      linear system matrix = precond matrix:
+      Mat Object: 1 MPI processes
+        type: mffd
+        rows=18000, cols=18000
+          Matrix-free approximation:
+            err=1.49012e-08 (relative error in function evaluation)
+            Using wp compute h routine
+                Does not compute normU
+Time taken for solution: 140.249
+Max Error: 0.0106548
+Time integrator took 102 time steps to reach final time 1.
+FLAG ARGUMENTS
+dm_plex_box_faces = 60,60
+ts_exact_final_time = matchstep
+stab = none
+CtauS = .3
+ts_adapt_dt_max = .01
+snes_type = ksponly
+problem = advection2d
+ts_max_time = 1
+petscspace_degree = 1
+ts_type = rosw
+ceed = /cpu/self/ref/serial
+ksp_atol = 1e-5
+-dm_plex_box_faces 60,60 -ts_exact_final_time matchstep -stab none -CtauS .3 -ts_adapt_dt_max .01 -snes_type ksponly -problem advection2d -ts_max_time 1 -petscspace_degree 1 -ts_type rosw -ceed /cpu/self/ref/serial -ksp_atol 1e-5 -naturalz -ts_monitor -dm_view -implicit -snes_mf -ts_view
+DM Object: 1 MPI processes
+  type: plex
+DM_0x84000000_0 in 2 dimensions:
+  0-cells: 3721
+  1-cells: 7320
+  2-cells: 3600
+Labels:
+  depth: 3 strata with value/size (0 (3721), 1 (7320), 2 (3600))
+  Face Sets: 4 strata with value/size (4 (60), 2 (60), 1 (60), 3 (60))
+  marker: 1 strata with value/size (1 (480))
+Global FEM nodes: 3600 on 1 ranks
+Local FEM nodes: 3721 (3600 owned)
+0 TS dt 0.0001 time 0.
+1 TS dt 0.001 time 0.0001
+2 TS dt 0.01 time 0.0011
+3 TS dt 0.01 time 0.0111
+4 TS dt 0.01 time 0.0211
+5 TS dt 0.01 time 0.0311
+6 TS dt 0.01 time 0.0411
+7 TS dt 0.01 time 0.0511
+8 TS dt 0.01 time 0.0611
+9 TS dt 0.01 time 0.0711
+10 TS dt 0.01 time 0.0811
+11 TS dt 0.01 time 0.0911
+12 TS dt 0.01 time 0.1011
+13 TS dt 0.01 time 0.1111
+14 TS dt 0.01 time 0.1211
+15 TS dt 0.01 time 0.1311
+16 TS dt 0.01 time 0.1411
+17 TS dt 0.01 time 0.1511
+18 TS dt 0.01 time 0.1611
+19 TS dt 0.01 time 0.1711
+20 TS dt 0.01 time 0.1811
+21 TS dt 0.01 time 0.1911
+22 TS dt 0.01 time 0.2011
+23 TS dt 0.01 time 0.2111
+24 TS dt 0.01 time 0.2211
+25 TS dt 0.01 time 0.2311
+26 TS dt 0.01 time 0.2411
+27 TS dt 0.01 time 0.2511
+28 TS dt 0.01 time 0.2611
+29 TS dt 0.01 time 0.2711
+30 TS dt 0.01 time 0.2811
+31 TS dt 0.01 time 0.2911
+32 TS dt 0.01 time 0.3011
+33 TS dt 0.01 time 0.3111
+34 TS dt 0.01 time 0.3211
+35 TS dt 0.01 time 0.3311
+36 TS dt 0.01 time 0.3411
+37 TS dt 0.01 time 0.3511
+38 TS dt 0.01 time 0.3611
+39 TS dt 0.01 time 0.3711
+40 TS dt 0.01 time 0.3811
+41 TS dt 0.01 time 0.3911
+42 TS dt 0.01 time 0.4011
+43 TS dt 0.01 time 0.4111
+44 TS dt 0.01 time 0.4211
+45 TS dt 0.01 time 0.4311
+46 TS dt 0.01 time 0.4411
+47 TS dt 0.01 time 0.4511
+48 TS dt 0.01 time 0.4611
+49 TS dt 0.01 time 0.4711
+50 TS dt 0.01 time 0.4811
+51 TS dt 0.01 time 0.4911
+52 TS dt 0.01 time 0.5011
+53 TS dt 0.01 time 0.5111
+54 TS dt 0.01 time 0.5211
+55 TS dt 0.01 time 0.5311
+56 TS dt 0.01 time 0.5411
+57 TS dt 0.01 time 0.5511
+58 TS dt 0.01 time 0.5611
+59 TS dt 0.01 time 0.5711
+60 TS dt 0.01 time 0.5811
+61 TS dt 0.01 time 0.5911
+62 TS dt 0.01 time 0.6011
+63 TS dt 0.01 time 0.6111
+64 TS dt 0.01 time 0.6211
+65 TS dt 0.01 time 0.6311
+66 TS dt 0.01 time 0.6411
+67 TS dt 0.01 time 0.6511
+68 TS dt 0.01 time 0.6611
+69 TS dt 0.01 time 0.6711
+70 TS dt 0.01 time 0.6811
+71 TS dt 0.01 time 0.6911
+72 TS dt 0.01 time 0.7011
+73 TS dt 0.01 time 0.7111
+74 TS dt 0.01 time 0.7211
+75 TS dt 0.01 time 0.7311
+76 TS dt 0.01 time 0.7411
+77 TS dt 0.01 time 0.7511
+78 TS dt 0.01 time 0.7611
+79 TS dt 0.01 time 0.7711
+80 TS dt 0.01 time 0.7811
+81 TS dt 0.01 time 0.7911
+82 TS dt 0.01 time 0.8011
+83 TS dt 0.01 time 0.8111
+84 TS dt 0.01 time 0.8211
+85 TS dt 0.01 time 0.8311
+86 TS dt 0.01 time 0.8411
+87 TS dt 0.01 time 0.8511
+88 TS dt 0.01 time 0.8611
+89 TS dt 0.01 time 0.8711
+90 TS dt 0.01 time 0.8811
+91 TS dt 0.01 time 0.8911
+92 TS dt 0.01 time 0.9011
+93 TS dt 0.01 time 0.9111
+94 TS dt 0.01 time 0.9211
+95 TS dt 0.01 time 0.9311
+96 TS dt 0.01 time 0.9411
+97 TS dt 0.01 time 0.9511
+98 TS dt 0.01 time 0.9611
+99 TS dt 0.01 time 0.9711
+100 TS dt 0.00945 time 0.9811
+101 TS dt 0.00945 time 0.99055
+102 TS dt 0.01 time 1.
+TS Object: 1 MPI processes
+  type: rosw
+    Rosenbrock-W ra34pw2
+    Abscissa of A       =  0.000000  0.871733  0.731580  1.000000 
+    Abscissa of A+Gamma =  0.435867  0.871733  0.731580  1.000000 
+  maximum time=1.
+  total number of nonlinear solver iterations=408
+  total number of linear solver iterations=4504
+  total number of linear solve failures=0
+  total number of rejected steps=0
+  using relative error tolerance of 0.0001,   using absolute error tolerance of 0.0001
+  TSAdapt Object: 1 MPI processes
+    type: basic
+    safety factor 0.9
+    extra safety factor after step rejection 0.5
+    clip fastest increase 10.
+    clip fastest decrease 0.1
+    maximum allowed timestep 0.01
+    minimum allowed timestep 1e-14
+    maximum solution absolute value to be ignored -1.
+  SNES Object: 1 MPI processes
+    type: ksponly
+    maximum iterations=50, maximum function evaluations=10000
+    tolerances: relative=1e-08, absolute=1e-50, solution=1e-08
+    total number of linear solver iterations=15
+    total number of function evaluations=16
+    norm schedule ALWAYS
+    Jacobian is never rebuilt
+    Jacobian is applied matrix-free with differencing, no explict Jacobian
+    KSP Object: 1 MPI processes
+      type: gmres
+        restart=30, using Classical (unmodified) Gram-Schmidt Orthogonalization with no iterative refinement
+        happy breakdown tolerance 1e-30
+      maximum iterations=10000, initial guess is zero
+      tolerances:  relative=1e-05, absolute=1e-05, divergence=10000.
+      left preconditioning
+      using PRECONDITIONED norm type for convergence test
+    PC Object: 1 MPI processes
+      type: none
+      linear system matrix = precond matrix:
+      Mat Object: 1 MPI processes
+        type: mffd
+        rows=18000, cols=18000
+          Matrix-free approximation:
+            err=1.49012e-08 (relative error in function evaluation)
+            Using wp compute h routine
+                Does not compute normU
+Time taken for solution: 135.441
+Max Error: 0.0106548
+Time integrator took 102 time steps to reach final time 1.
